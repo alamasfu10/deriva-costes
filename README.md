@@ -26,21 +26,9 @@ Alternativa al zip del campus, que sigue disponible con el mismo contenido.
 git clone https://github.com/alamasfu10/deriva-costes.git
 ```
 
-2. **No trabajes dentro del clon.** Copia la carpeta del día a otro sitio, con el nombre `deriva-costes-trabajo`, desde la carpeta que contiene el clon. Para el Día 1:
+2. Abre en VS Code la carpeta del día que quieras, no el clon entero. Para el Día 1 es `deriva-costes/dia1`. Para otro día, `dia2` o `dia3`.
 
-```bash
-cp -R deriva-costes/dia1 deriva-costes-trabajo
-```
-
-En Windows, con PowerShell:
-
-```powershell
-Copy-Item -Recurse deriva-costes\dia1 deriva-costes-trabajo
-```
-
-Para otro día, cambia `dia1` por `dia2` o `dia3`.
-
-3. Abre en VS Code solo la carpeta `deriva-costes-trabajo` y sigue la guía del ejercicio. En ella harás tus propios commits, con `git init` incluido: por eso conviene que esté fuera del clon, para no mezclar tu historial con el de este repositorio.
+3. Sigue la guía del ejercicio. El clon ya es un repositorio de Git, así que no hace falta `git init`: el estado de partida es el primer commit del historial y los commits que hagas se quedan en tu ordenador. No tienes permiso de escritura en este repositorio, así que un `git push` desde tu copia fallaría.
 
 Cada carpeta tiene su propio `README.md` con las instrucciones de instalación y arranque del proyecto: entorno virtual, `pip install -r requirements.txt`, API y panel.
 
